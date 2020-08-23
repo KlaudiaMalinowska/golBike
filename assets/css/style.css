@@ -17,38 +17,126 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
   font-family: 'Poppins', sans-serif;
+  color: var(--darkgray);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.main__div {
-  /* just for view if code is correct */
-  background-color: var(--lightgray);
-  height: 100%;
-  width: 100%;
+.container {
+  max-width: 108.8rem;
+  padding: 0 2rem;
+  margin: 0 auto;
 }
 
-.main__span {
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: var(--white);
+  position: fixed;
+  top: 0rem;
+  z-index: 100;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+.header__logo {
+  font-weight: 600;
+  font-size: var(--s);
   color: var(--darkblue);
 }
 
-.main__h1 {
-  color: var(--white);
+.header__list {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__item {
+  margin-left: 4.2rem;
+}
+
+.header__item:first-child {
+  margin-left: 0;
+}
+
+.header__link {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: var(--xs);
+  color: var(--darkgray);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.3) 100%),
+    url(../images/heroBackground.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__wrapper {
+  position: relative;
+}
+
+.hero__header {
+  max-width: 44rem;
+  font-weight: 900;
   font-size: var(--xl);
-  font-weight: 900;
-}
-
-.main__h2 {
-  color: var(--lightblue);
-  font-size: var(--xxl);
-  font-weight: 900;
-}
-
-.main__p {
   color: var(--white);
-  font-size: var(--s);
-  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.hero__header--blue {
+  position: relative;
+  color: var(--darkblue);
+  z-index: 3;
+  line-height: 12.2rem;
+}
+
+.hero__header--passion {
+  position: absolute;
+  top: 4.5rem;
+  left: 22rem;
+  font-weight: 900;
+  font-size: var(--xxl);
+  color: var(--lightblue);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: var(--lightblue);
+  z-index: 2;
+}
+
+.hero__paragraph {
+  max-width: 50%;
   font-weight: 400;
+  font-size: var(--s);
+  color: var(--white);
+  margin-top: 5.5rem;
+  line-height: 3.5rem;
+}
+
+.second {
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.third {
+  height: 100vh;
+  background-color: var(--lightblue);
 }
