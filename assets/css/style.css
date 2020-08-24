@@ -140,7 +140,7 @@ h6 {
   background-color: var(--white);
 }
 
-.third {
+.news {
   height: 100vh;
   background-color: var(--white);
   text-align: center;
@@ -150,20 +150,20 @@ h6 {
   align-content: center;
 }
 
-.third__header {
+.news__header {
   font-weight: 600;
   font-size: var(--m);
   margin-bottom: 3rem;
 }
 
-.third__content {
+.news__content {
   padding-top: 39.2rem;
   position: relative;
   width: 100%;
   min-height: 55rem;
 }
 
-.third__header--title {
+.news__header--title {
   font-weight: 600;
   font-size: var(--m);
   color: var(--lightblue);
@@ -171,14 +171,15 @@ h6 {
   margin-bottom: 1.5rem;
 }
 
-.third__paragraph {
+.news__paragraph {
   font-weight: 400;
   font-size: var(--s);
   color: var(--white);
   position: relative;
 }
 
-.third__filter {
+.news__filter {
+  border-radius: 1rem;
   background: var(--darkgraytransparent);
   position: absolute;
   top: 0;
@@ -187,7 +188,7 @@ h6 {
   height: 100%;
 }
 
-.third__image {
+.news__image {
   border-radius: 1rem;
   position: absolute;
   top: 0;
@@ -195,4 +196,68 @@ h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.archive {
+  height: 100vh;
+  background-color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.archive__header {
+  font-weight: 600;
+  font-size: var(--m);
+  margin-bottom: 3rem;
+}
+
+.archive__content {
+  position: relative;
+  width: 100%;
+  min-height: 39rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.article {
+  max-height: 39rem;
+  max-width: 26rem;
+  background-color: var(--white);
+  border-style: solid;
+  border-radius: 1rem;
+  border-color: var(--lightgray);
+  border-width: 0.05rem;
+}
+
+.archive__header--title {
+  font-weight: 600;
+  font-size: var(--xs);
+  padding: 1.4rem 1rem 1.2rem;
+  text-align: left;
+  line-height: 2.7rem;
+}
+
+.archive__paragraph {
+  font-weight: 400;
+  font-size: var(--xxs);
+  padding: 0 1rem 1.4rem;
+  text-align: left;
+  line-height: 1.8rem;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__header {
+  font-weight: 600;
+  font-size: var(--m);
+  margin-bottom: 3rem;
 }
